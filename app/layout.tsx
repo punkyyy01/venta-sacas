@@ -2,6 +2,7 @@ import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
 import { Analytics } from "@vercel/analytics/react"
+import FloatingWhatsApp from "@/components/FloatingWhatsApp"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -67,6 +68,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         {children}
+        <FloatingWhatsApp />
         <Analytics />
       </body>
     </html>

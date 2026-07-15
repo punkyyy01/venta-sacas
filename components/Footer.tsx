@@ -29,7 +29,9 @@ export default function Footer() {
           </div>
         </div>
         <div className="border-t border-gray-800 pt-6">
-          <p className="text-xs text-gray-500">© 2025 Sacas Chile · Todos los derechos reservados</p>
+          <p className="text-xs text-gray-500">
+            © {new Date().getFullYear()} Sacas Chile · Todos los derechos reservados
+          </p>
         </div>
       </div>
     </footer>

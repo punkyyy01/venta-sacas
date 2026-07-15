@@ -10,18 +10,27 @@ export default function Navbar() {
           <a href="#especificaciones" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
             Especificaciones
           </a>
-          <a href="#cotizar" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
+          <a
+            href="https://wa.me/56933436148"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
+          >
             Contacto
           </a>
           <a
-            href="#cotizar"
+            href="https://wa.me/56933436148"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-blue-800 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors"
           >
             Cotizar
           </a>
         </nav>
         <a
-          href="#cotizar"
+          href="https://wa.me/56933436148"
+          target="_blank"
+          rel="noopener noreferrer"
           className="md:hidden bg-blue-800 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors"
         >
           Cotizar

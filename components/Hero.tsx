@@ -35,19 +35,13 @@ export default function Hero() {
             </div>
             <div className="flex flex-wrap gap-3">
               <a
-                href="#cotizar"
-                className="bg-blue-800 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
-              >
-                Solicitar cotización
-              </a>
-              <a
                 href="https://wa.me/56933436148"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
               >
                 <MessageCircle size={18} />
-                WhatsApp
+                Solicitar cotización por WhatsApp
               </a>
             </div>
           </FadeIn>

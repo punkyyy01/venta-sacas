@@ -5,7 +5,6 @@ import ProductSpecs from "@/components/ProductSpecs"
 import Benefits from "@/components/Benefits"
 import ProductGallery from "@/components/ProductGallery"
 import WhatsAppStrip from "@/components/WhatsAppStrip"
-import QuoteForm from "@/components/QuoteForm"
 import Footer from "@/components/Footer"
 
 export default function Home() {
@@ -19,7 +18,6 @@ export default function Home() {
         <Benefits />
         <ProductGallery />
         <WhatsAppStrip />
-        <QuoteForm />
       </main>
       <Footer />
     </>
