@@ -13,7 +13,7 @@ export default function Hero() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
           <FadeIn>
             <span className="inline-block bg-blue-800 text-white text-xs font-medium px-3 py-1 rounded-full mb-6">
               Despacho a todo Santiago
@@ -52,16 +52,18 @@ export default function Hero() {
             </div>
           </FadeIn>
 
-          <div className="hidden lg:flex items-center justify-center">
+          <div className="hidden lg:block">
             <FadeIn>
               <div className="text-center select-none">
-                <Image
-                  src="/images/sacas-apiladas.jpg"
-                  alt="Sacas industriales de polipropileno apiladas"
-                  width={480}
-                  height={360}
-                  className="rounded-xl w-full object-cover mb-6"
-                />
+                <div className="relative aspect-[4/5] w-full mb-6">
+                  <Image
+                    src="/images/sacas-apiladas.jpg"
+                    alt="Sacas industriales de polipropileno apiladas"
+                    fill
+                    priority
+                    className="rounded-xl object-cover"
+                  />
+                </div>
                 <p className="text-8xl font-bold text-blue-800 tracking-tight leading-none">$3.000</p>
                 <p className="text-sm text-gray-400 mt-3">por saca</p>
               </div>
