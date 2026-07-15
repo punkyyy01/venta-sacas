@@ -4,8 +4,8 @@ import FadeIn from "./FadeIn"
 const BENEFITS = [
   {
     icon: ShieldCheck,
-    title: "Alta resistencia",
-    desc: "PP resistente a humedad, UV y cargas de impacto repetidas.",
+    title: "Buen estado garantizado",
+    desc: "Sacas revisadas y en buen estado, listas para reutilizar.",
   },
   {
     icon: RefreshCw,
@@ -15,7 +15,7 @@ const BENEFITS = [
   {
     icon: Truck,
     title: "Fácil manejo",
-    desc: "Compatible con horquilla, grúa pluma o puente de izaje.",
+    desc: "Tamaño y peso pensados para mover con equipo industrial estándar.",
   },
   {
     icon: Clock,
@@ -24,13 +24,13 @@ const BENEFITS = [
   },
   {
     icon: SlidersHorizontal,
-    title: "Personalización",
-    desc: "Medidas, impresión y liner según las necesidades de tu faena.",
+    title: "Nuevas y usadas",
+    desc: "Mezcla de sacas nuevas y usadas, todas en excelente estado.",
   },
   {
     icon: BadgePercent,
-    title: "Precio por volumen",
-    desc: "Descuentos para pedidos de 50+ unidades. Cotiza sin compromiso.",
+    title: "Venta por volumen",
+    desc: "Ideal para pedidos grandes (ej. 300+ unidades). $3.000 por unidad, cotiza sin compromiso.",
   },
 ]
 

@@ -13,6 +13,7 @@ out/
 .DS_Store
 *.pem
 npm-debug.log*
+repomix-output.xml
 
 # vercel
 .vercel

@@ -99,7 +99,7 @@ export default function QuoteForm() {
             <Field k="name" label="Nombre y apellido" />
             <Field k="company" label="Empresa" />
             <Field k="phone" label="Teléfono" />
-            <Field k="quantity" label="Cantidad estimada" placeholder="Ej: 100 sacas de 1.000 kg con liner" />
+            <Field k="quantity" label="Cantidad estimada" placeholder="Ej: 300 sacas" />
           </div>
 
           <div>
@@ -108,7 +108,7 @@ export default function QuoteForm() {
               value={f.notes}
               onChange={set("notes")}
               rows={4}
-              placeholder="Ej: necesito spout inferior para cemento, entrega en Puente Alto..."
+              placeholder="Ej: necesito despacho a Puente Alto, o retiro directo en bodega..."
               className="w-full rounded-lg border border-gray-300 px-3 py-2.5 text-sm outline-none focus:ring-2 focus:ring-blue-800 focus:border-blue-800 transition resize-none"
             />
           </div>

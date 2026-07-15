@@ -20,10 +20,10 @@ export default function Footer() {
             <p className="text-sm text-gray-400">
               Email:{" "}
               <a
-                href="mailto:contacto@sacaschile.cl"
+                href="mailto:contacto@curumillaspa.cl"
                 className="text-white hover:text-gray-300 transition-colors"
               >
-                contacto@sacaschile.cl
+                contacto@curumillaspa.cl
               </a>
             </p>
           </div>

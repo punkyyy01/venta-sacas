@@ -1,12 +1,11 @@
 import FadeIn from "./FadeIn"
 
 const SPECS = [
-  { label: "Capacidad de carga", value: "500 – 2.000 kg", desc: "Factor de seguridad 5:1 o 6:1" },
-  { label: "Material", value: "PP tejido", desc: "Polipropileno UV estabilizado" },
-  { label: "Medidas estándar", value: "90×90×90 cm", desc: "También 100×100×100 y personalizadas" },
-  { label: "Asas", value: "4 asas PP", desc: "Alta tenacidad, cosidas y reforzadas" },
-  { label: "Liner interior", value: "Opcional", desc: "PE para granulares finos o material húmedo" },
-  { label: "Descarga inferior", value: "Opcional", desc: "Spout o skirt para vaciado controlado" },
+  { label: "Altura", value: "1.90 m", desc: "Medida estándar" },
+  { label: "Capacidad de carga", value: "1.500 – 2.000 kg", desc: "" },
+  // TODO: confirmar material exacto con proveedor
+  { label: "Material", value: "Polipropileno tejido", desc: "" },
+  { label: "Estado", value: "Nuevas y usadas", desc: "Todas revisadas, excelente estado" },
 ]
 
 export default function ProductSpecs() {
@@ -16,7 +15,8 @@ export default function ProductSpecs() {
         <FadeIn className="mb-12">
           <p className="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-2">Ficha técnica</p>
           <h2 className="text-3xl font-bold text-gray-900 mb-2">Especificaciones del producto</h2>
-          <p className="text-gray-500">Dimensiones y materiales estándar. Pedidos personalizados disponibles.</p>
+          {/* TODO: confirmar ancho y largo con cliente, solo se conoce el alto */}
+          <p className="text-gray-500">Medidas y materiales de nuestras sacas industriales.</p>
         </FadeIn>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {SPECS.map(({ label, value, desc }) => (

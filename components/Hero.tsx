@@ -3,10 +3,10 @@ import { MessageCircle } from "lucide-react"
 import FadeIn from "./FadeIn"
 
 const SPECS = [
-  { label: "Capacidad", value: "500 – 2.000 kg" },
-  { label: "Material", value: "PP tejido" },
-  { label: "Medidas", value: "Estándar y a medida" },
-  { label: "Liner", value: "Con o sin" },
+  { label: "Altura", value: "1.90 m" },
+  { label: "Capacidad", value: "1.500 – 2.000 kg" },
+  { label: "Estado", value: "Nuevas y usadas, excelente estado" },
+  { label: "Precio", value: "$3.000 c/u" },
 ]
 
 export default function Hero() {
@@ -19,11 +19,11 @@ export default function Hero() {
               Despacho a todo Santiago
             </span>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
-              Sacas industriales para trabajo pesado
+              Sacas industriales grandes en excelente estado
             </h1>
             <p className="text-lg text-gray-500 mb-8">
-              Empaques flexibles de gran capacidad para construcción, minería y agroindustria.
-              Stock disponible y pedidos a medida.
+              Sacas de 1.90 m de alto para cualquier uso general a granel. Nuevas y usadas,
+              todas en excelente estado. Stock disponible para venta por volumen.
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
               {SPECS.map(({ label, value }) => (
@@ -56,14 +56,14 @@ export default function Hero() {
             <FadeIn>
               <div className="text-center select-none">
                 <Image
-                  src="https://placehold.co/480x360/e2e8f0/94a3b8?text=Foto+del+producto"
-                  alt="Saca industrial de polipropileno"
+                  src="/images/sacas-apiladas.jpg"
+                  alt="Sacas industriales de polipropileno apiladas"
                   width={480}
                   height={360}
                   className="rounded-xl w-full object-cover mb-6"
                 />
-                <p className="text-9xl font-bold text-blue-800 tracking-tight leading-none">2.000</p>
-                <p className="text-sm text-gray-400 mt-3">kg capacidad máxima</p>
+                <p className="text-8xl font-bold text-blue-800 tracking-tight leading-none">$3.000</p>
+                <p className="text-sm text-gray-400 mt-3">por saca</p>
               </div>
             </FadeIn>
           </div>
