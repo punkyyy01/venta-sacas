@@ -1,4 +1,5 @@
 import { MessageCircle } from "lucide-react"
+import WhatsAppLink from "./WhatsAppLink"
 
 export default function WhatsAppStrip() {
   return (
@@ -13,14 +14,12 @@ export default function WhatsAppStrip() {
             </span>
           </p>
         </div>
-        <a
-          href="https://wa.me/56933436148"
-          target="_blank"
-          rel="noopener noreferrer"
+        <WhatsAppLink
+          location="strip"
           className="shrink-0 bg-green-500 hover:bg-green-600 text-white font-semibold px-5 py-2.5 rounded-lg transition-colors"
         >
           Abrir WhatsApp
-        </a>
+        </WhatsAppLink>
       </div>
     </div>
   )

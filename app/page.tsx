@@ -3,6 +3,7 @@ import Hero from "@/components/Hero"
 import Industries from "@/components/Industries"
 import ProductSpecs from "@/components/ProductSpecs"
 import Benefits from "@/components/Benefits"
+import HowItWorks from "@/components/HowItWorks"
 import ProductGallery from "@/components/ProductGallery"
 import FAQ from "@/components/FAQ"
 import WhatsAppStrip from "@/components/WhatsAppStrip"
@@ -17,6 +18,7 @@ export default function Home() {
         <Industries />
         <ProductSpecs />
         <Benefits />
+        <HowItWorks />
         <ProductGallery />
         <FAQ />
         <WhatsAppStrip />

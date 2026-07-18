@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { MessageCircle } from "lucide-react"
 import FadeIn from "./FadeIn"
+import WhatsAppLink from "./WhatsAppLink"
 
 const SPECS = [
   { label: "Altura", value: "1.90 m" },
@@ -34,15 +35,13 @@ export default function Hero() {
               ))}
             </div>
             <div className="flex flex-wrap gap-3">
-              <a
-                href="https://wa.me/56933436148"
-                target="_blank"
-                rel="noopener noreferrer"
+              <WhatsAppLink
+                location="hero"
                 className="flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
               >
                 <MessageCircle size={18} />
                 Solicitar cotización por WhatsApp
-              </a>
+              </WhatsAppLink>
             </div>
           </FadeIn>
 

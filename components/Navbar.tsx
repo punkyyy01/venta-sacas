@@ -1,3 +1,5 @@
+import WhatsAppLink from "./WhatsAppLink"
+
 export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
@@ -10,31 +12,25 @@ export default function Navbar() {
           <a href="#especificaciones" className="text-sm text-gray-600 hover:text-gray-900 transition-colors">
             Especificaciones
           </a>
-          <a
-            href="https://wa.me/56933436148"
-            target="_blank"
-            rel="noopener noreferrer"
+          <WhatsAppLink
+            location="navbar_contacto"
             className="text-sm text-gray-600 hover:text-gray-900 transition-colors"
           >
             Contacto
-          </a>
-          <a
-            href="https://wa.me/56933436148"
-            target="_blank"
-            rel="noopener noreferrer"
+          </WhatsAppLink>
+          <WhatsAppLink
+            location="navbar_cotizar_desktop"
             className="bg-blue-800 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors"
           >
             Cotizar
-          </a>
+          </WhatsAppLink>
         </nav>
-        <a
-          href="https://wa.me/56933436148"
-          target="_blank"
-          rel="noopener noreferrer"
+        <WhatsAppLink
+          location="navbar_cotizar_mobile"
           className="md:hidden bg-blue-800 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition-colors"
         >
           Cotizar
-        </a>
+        </WhatsAppLink>
       </div>
     </header>
   )

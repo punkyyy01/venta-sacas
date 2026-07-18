@@ -1,3 +1,5 @@
+import WhatsAppLink from "./WhatsAppLink"
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white">
@@ -10,12 +12,12 @@ export default function Footer() {
           <div>
             <p className="text-sm text-gray-400 mb-1">
               WhatsApp:{" "}
-              <a
-                href="https://wa.me/56933436148"
+              <WhatsAppLink
+                location="footer"
                 className="text-white hover:text-gray-300 transition-colors"
               >
                 +56 9 3343 6148
-              </a>
+              </WhatsAppLink>
             </p>
             <p className="text-sm text-gray-400">
               Email:{" "}
