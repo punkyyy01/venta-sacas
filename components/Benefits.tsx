@@ -40,7 +40,7 @@ export default function Benefits() {
       <div className="max-w-6xl mx-auto px-4">
         <FadeIn className="mb-12">
           <p className="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-2">Por qué elegirnos</p>
-          <h2 className="text-3xl font-bold text-gray-900 mb-2">Ventajas de comprar con nosotros</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-2">Ventajas de comprar sacas industriales en Santiago</h2>
           <p className="text-gray-500">Más que un producto, una solución de embalaje confiable para tu operación.</p>
         </FadeIn>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">

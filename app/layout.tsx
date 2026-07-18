@@ -8,34 +8,33 @@ const inter = Inter({ subsets: ["latin"] })
 
 const SITE_URL = "https://curumillaspa.cl"
 
+const TITLE = "Sacas Industriales 1.90m en Santiago | Sacas Chile"
+const DESCRIPTION =
+  "Sacas industriales de 1.90 m, nuevas y usadas en excelente estado. Capacidad 1.500-2.000 kg. $3.000 por unidad, venta por volumen. Despacho en Santiago, Chile."
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Sacas Industriales 1.90m en Santiago | Sacas Chile — Nuevas y Usadas",
-  description:
-    "Sacas industriales de 1.90 m de alto, nuevas y usadas en excelente estado. Capacidad 1.500 a 2.000 kg. $3.000 por unidad, venta por volumen. Despacho a todo Santiago.",
+  title: TITLE,
+  description: DESCRIPTION,
   alternates: {
     canonical: SITE_URL,
   },
   openGraph: {
-    title: "Sacas Industriales 1.90m en Santiago | Sacas Chile",
-    description:
-      "Sacas industriales de 1.90 m de alto, nuevas y usadas en excelente estado. Capacidad 1.500 a 2.000 kg. $3.000 por unidad, venta por volumen.",
+    title: TITLE,
+    description: DESCRIPTION,
     url: SITE_URL,
     siteName: "Sacas Chile",
-    images: ["/images/sacas-apiladas.jpg"],
     locale: "es_CL",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Sacas Industriales 1.90m en Santiago | Sacas Chile",
-    description:
-      "Sacas industriales de 1.90 m de alto, nuevas y usadas en excelente estado. Capacidad 1.500 a 2.000 kg. $3.000 por unidad.",
-    images: ["/images/sacas-apiladas.jpg"],
+    title: TITLE,
+    description: DESCRIPTION,
   },
 }
 
-const jsonLd = {
+const productJsonLd = {
   "@context": "https://schema.org",
   "@type": "Product",
   name: "Saca industrial 1.90m",
@@ -59,13 +58,32 @@ const jsonLd = {
   },
 }
 
+const localBusinessJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  name: "Sacas Chile",
+  description: "Venta de sacas industriales nuevas y usadas por volumen, con despacho en Santiago, Chile.",
+  url: SITE_URL,
+  telephone: "+56933436148",
+  email: "contacto@curumillaspa.cl",
+  areaServed: {
+    "@type": "City",
+    name: "Santiago",
+  },
+  priceRange: "$$",
+}
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="es">
       <body className={inter.className}>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
         />
         {children}
         <FloatingWhatsApp />

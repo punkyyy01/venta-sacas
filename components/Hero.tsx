@@ -55,6 +55,7 @@ export default function Hero() {
                     alt="Sacas industriales de polipropileno apiladas"
                     fill
                     priority
+                    sizes="(min-width: 1024px) 50vw, 100vw"
                     className="rounded-xl object-cover"
                   />
                 </div>

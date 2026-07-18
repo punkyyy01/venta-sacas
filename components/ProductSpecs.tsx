@@ -14,7 +14,7 @@ export default function ProductSpecs() {
       <div className="max-w-6xl mx-auto px-4">
         <FadeIn className="mb-12">
           <p className="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-2">Ficha técnica</p>
-          <h2 className="text-3xl font-bold text-gray-900 mb-2">Especificaciones del producto</h2>
+          <h2 className="text-3xl font-bold text-gray-900 mb-2">Especificaciones de nuestras sacas industriales</h2>
           {/* TODO: confirmar ancho y largo con cliente, solo se conoce el alto */}
           <p className="text-gray-500">Medidas y materiales de nuestras sacas industriales.</p>
         </FadeIn>

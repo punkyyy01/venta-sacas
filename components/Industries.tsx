@@ -8,8 +8,10 @@ export default function Industries() {
           <p className="text-xs font-semibold tracking-widest text-gray-400 uppercase mb-2">Usos</p>
           <h2 className="text-3xl font-bold text-gray-900 mb-4">¿Para qué se usa una saca?</h2>
           <p className="text-gray-500 max-w-2xl">
-            Sirven para cualquier tipo de carga a granel de uso general: áridos, escombros, insumos
-            agrícolas, bodegaje y transporte, y más. No aptas para uso químico.
+            Nuestras sacas de polipropileno tejido —también conocidas como bolsones industriales o
+            big bags— sirven para cualquier tipo de carga a granel de uso general: áridos, escombros,
+            insumos agrícolas, bodegaje y transporte, y más. Ideales para obras y bodegas en Santiago.
+            No aptas para uso químico.
           </p>
         </FadeIn>
       </div>
